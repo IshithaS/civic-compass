@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Candidates from './pages/Candidates';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/elections" element={<div className="p-8 text-center">Elections Page Coming Soon</div>} />
-            <Route path="/candidates" element={<div className="p-8 text-center">Candidates Page Coming Soon</div>} />
+            <Route path="/candidates" element={<Candidates />} />
             <Route path="/compare" element={<div className="p-8 text-center">Compare Page Coming Soon</div>} />
             <Route path="/learn" element={<div className="p-8 text-center">Learn Page Coming Soon</div>} />
           </Routes>
