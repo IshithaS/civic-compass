@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Candidates from './pages/Candidates';
+import Compare from './pages/Compare';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/elections" element={<div className="p-8 text-center">Elections Page Coming Soon</div>} />
             <Route path="/candidates" element={<Candidates />} />
-            <Route path="/compare" element={<div className="p-8 text-center">Compare Page Coming Soon</div>} />
+            <Route path="/compare" element={<Compare />} />
             <Route path="/learn" element={<div className="p-8 text-center">Learn Page Coming Soon</div>} />
           </Routes>
         </main>
