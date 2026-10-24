@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Candidates from './pages/Candidates';
 import Compare from './pages/Compare';
+import Learn from './pages/Learn';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             <Route path="/elections" element={<div className="p-8 text-center">Elections Page Coming Soon</div>} />
             <Route path="/candidates" element={<Candidates />} />
             <Route path="/compare" element={<Compare />} />
-            <Route path="/learn" element={<div className="p-8 text-center">Learn Page Coming Soon</div>} />
+            <Route path="/learn" element={<Learn />} />
           </Routes>
         </main>
       </div>
